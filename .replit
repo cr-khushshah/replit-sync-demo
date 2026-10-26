@@ -8,3 +8,6 @@ externalPort = 80
 [deployment]
 run = ["sh", "-c", "npm start"]
 build = ["sh", "-c", "npm ci"]
+
+[nix]
+channel = "stable-25_05"
