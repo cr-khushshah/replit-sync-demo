@@ -7,7 +7,7 @@ const GREETING = process.env.APP_GREETING || "(APP_GREETING not set)";
 
 app.get("/", (req, res) => {
   res.send(`
-    <h1>Replit Sync Demo</h1>
+    <h1>Replit Sync Demo v1.0.1</h1>
     <p>Version: <b>${pkg.version}</b></p>
     <p>Greeting from secret: <b>${GREETING}</b></p>
     <p>Running on: <b>${process.env.REPL_ID ? "Replit" : "local machine"}</b></p>
