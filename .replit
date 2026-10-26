@@ -11,3 +11,14 @@ build = ["sh", "-c", "npm ci"]
 
 [nix]
 channel = "stable-25_05"
+
+[workflows]
+
+[[workflows.workflow]]
+name = "start app"
+mode = "sequential"
+author = 67180105
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm install && npm start"
